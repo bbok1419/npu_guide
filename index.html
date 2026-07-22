@@ -33,6 +33,18 @@
   --plum-dim:     rgba(122,92,135,.12);
   --rust:         #9A6B4F;
   --rust-dim:     rgba(154,107,79,.12);
+
+  /* 테이블 매핑 관계 유형별 (문서 저채도 톤) */
+  --map-11:       #547792;
+  --map-11-dim:   rgba(84,119,146,.12);
+  --map-merge:    #4F7A6E;
+  --map-merge-dim:rgba(79,122,110,.14);
+  --map-split:    #9A6B4F;
+  --map-split-dim:rgba(154,107,79,.12);
+  --map-cond:     #A65353;
+  --map-cond-dim: rgba(166,83,83,.10);
+  --map-new:      #7A5C87;
+  --map-new-dim:  rgba(122,92,135,.12);
  
   --text:         #292B31;
   --text-muted:   #6B7280;
@@ -270,9 +282,10 @@ tr.g-console .svc-chip { color:var(--plum); background:var(--plum-dim); }
 .diagram-legend { display:flex; flex-wrap:wrap; gap:18px; margin-bottom:16px; }
 .lg-item { display:flex; align-items:center; gap:7px; font-size:13px; color:var(--text-muted); }
 .lg-line { display:inline-block; width:22px; height:0; border-top-width:2.5px; border-top-style:solid; }
-.lg-normal { border-color:var(--accent); }
-.lg-merge  { border-color:var(--gold); }
-.lg-split  { border-color:var(--warn); }
+.lg-normal { border-color:var(--map-11); }
+.lg-merge  { border-color:var(--map-merge); }
+.lg-split  { border-color:var(--map-split); }
+.lg-cond   { border-color:var(--map-cond); border-top-style:dashed; }
 .lg-guest  { border-color:var(--text-dim); border-top-style:dashed; }
 
 .table-details { margin-top:20px; }
@@ -832,12 +845,6 @@ tr.g-console .svc-chip { color:var(--plum); background:var(--plum-dim); }
           <div class="genre-item">호연 <span class="gi-note">— 서브컬처 스타일</span></div>
         </div>
         <div class="genre-box">
-          <div class="genre-title">액션</div>
-          <div class="genre-item">마스터X마스터 (MXM)</div>
-          <div class="genre-item">파이널 블레이드</div>
-          <div class="genre-item">헌터스어드벤처</div>
-        </div>
-        <div class="genre-box">
           <div class="genre-title">서브컬처 (액션 RPG)</div>
           <div class="genre-item">브레이커스 (리밋 제로 브레이커스)</div>
         </div>
@@ -845,11 +852,14 @@ tr.g-console .svc-chip { color:var(--plum); background:var(--plum-dim); }
           <div class="genre-title">액션·전략 RPG</div>
           <div class="genre-item">로스트소드 (Lost Sword)</div>
           <div class="genre-item">저니 오브 모나크 (Journey of Monarch)</div>
+          <div class="genre-item">파이널 블레이드</div>
+          <div class="genre-item">헌터스어드벤처</div>
         </div>
         <div class="genre-box">
           <div class="genre-title">슈팅 / 배틀로얄</div>
           <div class="genre-item">타임 테이커즈</div>
           <div class="genre-item">배틀크러쉬</div>
+          <div class="genre-item">마스터X마스터 (MXM)</div>
         </div>
         <div class="genre-box">
           <div class="genre-title">랜덤 디펜스</div>
@@ -1017,50 +1027,50 @@ tr.g-console .svc-chip { color:var(--plum); background:var(--plum-dim); }
 
             <g font-family="var(--font)">
               <!-- Row A : dnpu_account (root) + fnpu_payment_pre -->
-              <rect x="430" y="40" width="320" height="90" rx="12" fill="var(--sky-dim)" stroke="var(--sky)" stroke-opacity="0.55" stroke-width="1.5"/>
-              <text x="452" y="80" font-size="18" font-weight="800" fill="var(--heading)" font-family="monospace">dnpu_account</text>
+              <rect x="430" y="40" width="320" height="90" rx="12" fill="var(--map-merge-dim)" stroke="var(--map-merge)" stroke-opacity="0.55" stroke-width="1.5"/>
+              <text x="452" y="80" font-size="18" font-weight="800" fill="var(--map-merge)" font-family="monospace">dnpu_account</text>
               <text x="452" y="107" font-size="12.5" fill="var(--text-muted)">메인 테이블 · NPU 계정 통합 (원천)</text>
 
-              <rect x="820" y="40" width="320" height="90" rx="12" fill="var(--teal-dim)" stroke="var(--teal)" stroke-opacity="0.55" stroke-width="1.5"/>
-              <text x="842" y="80" font-size="18" font-weight="800" fill="var(--heading)" font-family="monospace">fnpu_payment_pre</text>
+              <rect x="820" y="40" width="320" height="90" rx="12" fill="var(--map-split-dim)" stroke="var(--map-split)" stroke-opacity="0.55" stroke-width="1.5"/>
+              <text x="842" y="80" font-size="18" font-weight="800" fill="var(--map-split)" font-family="monospace">fnpu_payment_pre</text>
               <text x="842" y="107" font-size="12.5" fill="var(--text-muted)">팩트 · 환율 적용 전 매출</text>
 
               <!-- Row B : fnpu_login (하위 허브, 강조) + fnpu_payment -->
-              <rect x="430" y="230" width="320" height="90" rx="12" fill="var(--accent-dim)" stroke="var(--accent)" stroke-opacity="0.8" stroke-width="2.2"/>
-              <text x="452" y="270" font-size="18" font-weight="800" fill="var(--accent)" font-family="monospace">fnpu_login</text>
+              <rect x="430" y="230" width="320" height="90" rx="12" fill="var(--map-11-dim)" stroke="var(--map-11)" stroke-opacity="0.8" stroke-width="2.2"/>
+              <text x="452" y="270" font-size="18" font-weight="800" fill="var(--map-11)" font-family="monospace">fnpu_login</text>
               <text x="452" y="297" font-size="12.5" fill="var(--text-muted)">팩트 · 접속/플레이타임 (하위 허브)</text>
 
-              <rect x="820" y="230" width="320" height="90" rx="12" fill="var(--teal-dim)" stroke="var(--teal)" stroke-opacity="0.55" stroke-width="1.5"/>
-              <text x="842" y="270" font-size="18" font-weight="800" fill="var(--heading)" font-family="monospace">fnpu_payment</text>
+              <rect x="820" y="230" width="320" height="90" rx="12" fill="var(--map-split-dim)" stroke="var(--map-split)" stroke-opacity="0.55" stroke-width="1.5"/>
+              <text x="842" y="270" font-size="18" font-weight="800" fill="var(--map-split)" font-family="monospace">fnpu_payment</text>
               <text x="842" y="297" font-size="12.5" fill="var(--text-muted)">팩트 · 최종 매출 (환율·VAT)</text>
 
               <!-- Row C : fnpu_login 파생 (status / main_account / bds) -->
-              <rect x="40" y="420" width="320" height="90" rx="12" fill="var(--teal-dim)" stroke="var(--teal)" stroke-opacity="0.55" stroke-width="1.5"/>
-              <text x="62" y="460" font-size="18" font-weight="800" fill="var(--heading)" font-family="monospace">fnpu_status</text>
+              <rect x="40" y="420" width="320" height="90" rx="12" fill="var(--map-11-dim)" stroke="var(--map-11)" stroke-opacity="0.55" stroke-width="1.5"/>
+              <text x="62" y="460" font-size="18" font-weight="800" fill="var(--map-11)" font-family="monospace">fnpu_status</text>
               <text x="62" y="487" font-size="12.5" fill="var(--text-muted)">팩트 · 상태 (NB/CB/ST)</text>
 
-              <rect x="430" y="420" width="320" height="90" rx="12" fill="var(--teal-dim)" stroke="var(--teal)" stroke-opacity="0.55" stroke-width="1.5"/>
-              <text x="452" y="460" font-size="18" font-weight="800" fill="var(--heading)" font-family="monospace">fnpu_main_account</text>
+              <rect x="430" y="420" width="320" height="90" rx="12" fill="var(--map-11-dim)" stroke="var(--map-11)" stroke-opacity="0.55" stroke-width="1.5"/>
+              <text x="452" y="460" font-size="18" font-weight="800" fill="var(--map-11)" font-family="monospace">fnpu_main_account</text>
               <text x="452" y="487" font-size="12.5" fill="var(--text-muted)">팩트 · 대표(메인) 계정</text>
 
-              <rect x="820" y="420" width="320" height="90" rx="12" fill="var(--teal-dim)" stroke="var(--teal)" stroke-opacity="0.55" stroke-width="1.5"/>
-              <text x="842" y="460" font-size="18" font-weight="800" fill="var(--heading)" font-family="monospace">fnpu_bds</text>
+              <rect x="820" y="420" width="320" height="90" rx="12" fill="var(--map-11-dim)" stroke="var(--map-11)" stroke-opacity="0.55" stroke-width="1.5"/>
+              <text x="842" y="460" font-size="18" font-weight="800" fill="var(--map-11)" font-family="monospace">fnpu_bds</text>
               <text x="842" y="487" font-size="12.5" fill="var(--text-muted)">팩트 · 부정 사용자</text>
 
               <!-- Row D : fnpu_history (fnpu_status 누적 이력) -->
-              <rect x="40" y="610" width="320" height="90" rx="12" fill="var(--teal-dim)" stroke="var(--teal)" stroke-opacity="0.55" stroke-width="1.5"/>
-              <text x="62" y="650" font-size="18" font-weight="800" fill="var(--heading)" font-family="monospace">fnpu_history</text>
+              <rect x="40" y="610" width="320" height="90" rx="12" fill="var(--map-11-dim)" stroke="var(--map-11)" stroke-opacity="0.55" stroke-width="1.5"/>
+              <text x="62" y="650" font-size="18" font-weight="800" fill="var(--map-11)" font-family="monospace">fnpu_history</text>
               <text x="62" y="677" font-size="12.5" fill="var(--text-muted)">팩트 · Key 누적 이력</text>
 
               <!-- Row E : 독립 코드성(기준정보) 테이블 -->
               <text x="590" y="738" text-anchor="middle" font-size="13" fill="var(--text-dim)" font-style="italic">독립 코드성(기준정보) 테이블 — 다른 테이블과 직접 관계선 없음</text>
 
-              <rect x="235" y="760" width="320" height="90" rx="12" fill="var(--gold-dim)" stroke="var(--gold)" stroke-opacity="0.55" stroke-width="1.5" stroke-dasharray="6,5"/>
-              <text x="257" y="800" font-size="18" font-weight="800" fill="var(--heading)" font-family="monospace">dnpu_svc_appgroup</text>
+              <rect x="235" y="760" width="320" height="90" rx="12" fill="var(--map-new-dim)" stroke="var(--map-new)" stroke-opacity="0.55" stroke-width="1.5" stroke-dasharray="6,5"/>
+              <text x="257" y="800" font-size="18" font-weight="800" fill="var(--map-new)" font-family="monospace">dnpu_svc_appgroup</text>
               <text x="257" y="827" font-size="12.5" fill="var(--text-muted)">독립 코드성 테이블 (별도)</text>
 
-              <rect x="625" y="760" width="320" height="90" rx="12" fill="var(--gold-dim)" stroke="var(--gold)" stroke-opacity="0.55" stroke-width="1.5" stroke-dasharray="6,5"/>
-              <text x="647" y="800" font-size="18" font-weight="800" fill="var(--heading)" font-family="monospace">dnpu_category</text>
+              <rect x="625" y="760" width="320" height="90" rx="12" fill="var(--map-new-dim)" stroke="var(--map-new)" stroke-opacity="0.55" stroke-width="1.5" stroke-dasharray="6,5"/>
+              <text x="647" y="800" font-size="18" font-weight="800" fill="var(--map-new)" font-family="monospace">dnpu_category</text>
               <text x="647" y="827" font-size="12.5" fill="var(--text-muted)">디멘전 · 신규 · 독립 코드성</text>
             </g>
           </svg>
@@ -1213,8 +1223,8 @@ tr.g-console .svc-chip { color:var(--plum); background:var(--plum-dim); }
         <span class="lg-item"><i class="lg-line lg-normal"></i>1:1 매핑</span>
         <span class="lg-item"><i class="lg-line lg-merge"></i>통합 (merge)</span>
         <span class="lg-item"><i class="lg-line lg-split"></i>분리 (split)</span>
-        <span class="lg-item"><i class="lg-line lg-guest"></i>조건 추출</span>
-        <span class="lg-item"><i class="lg-line" style="border-color:var(--sky); border-top-style:dashed;"></i>신규 (기존 매핑 없음)</span>
+        <span class="lg-item"><i class="lg-line lg-cond"></i>조건 추출</span>
+        <span class="lg-item"><i class="lg-line" style="border-color:var(--map-new); border-top-style:dashed;"></i>신규 (기존 매핑 없음)</span>
       </div>
 
       <div class="chart-box">
@@ -1223,18 +1233,18 @@ tr.g-console .svc-chip { color:var(--plum); background:var(--plum-dim); }
           <text x="950" y="35" text-anchor="middle" fill="var(--accent)" font-size="14" font-weight="700" font-family="var(--font)">글로벌 NPU</text>
 
           <!-- connectors -->
-          <path d="M420,87 C540,87 640,87 760,87" fill="none" stroke="var(--gold)" stroke-width="2.4" opacity="0.85"/>
-          <path d="M420,171 C540,171 640,87 760,87" fill="none" stroke="var(--gold)" stroke-width="2.4" opacity="0.85"/>
-          <path d="M420,255 C540,255 640,171 760,171" fill="none" stroke="var(--accent)" stroke-width="2" opacity="0.7"/>
-          <path d="M420,339 C540,339 640,255 760,255" fill="none" stroke="var(--accent)" stroke-width="2" opacity="0.7"/>
-          <path d="M420,423 C540,423 640,339 760,339" fill="none" stroke="var(--warn)" stroke-width="2.4" opacity="0.85"/>
-          <path d="M420,423 C540,423 640,423 760,423" fill="none" stroke="var(--warn)" stroke-width="2.4" opacity="0.85"/>
-          <path d="M420,507 C540,507 640,507 760,507" fill="none" stroke="var(--accent)" stroke-width="2" opacity="0.7"/>
-          <path d="M420,591 C540,591 640,591 760,591" fill="none" stroke="var(--accent)" stroke-width="2" opacity="0.7"/>
-          <path d="M420,675 C540,675 640,675 760,675" fill="none" stroke="var(--accent)" stroke-width="2" opacity="0.7"/>
-          <path d="M420,759 C540,759 640,759 760,759" fill="none" stroke="var(--text-dim)" stroke-width="2" stroke-dasharray="6,6" opacity="0.9"/>
-          <path d="M420,843 C540,843 640,843 760,843" fill="none" stroke="var(--sky)" stroke-width="2" stroke-dasharray="6,6" opacity="0.75"/>
-          <path d="M420,927 C540,927 640,927 760,927" fill="none" stroke="var(--sky)" stroke-width="2" stroke-dasharray="6,6" opacity="0.75"/>
+          <path d="M420,87 C540,87 640,87 760,87" fill="none" stroke="var(--map-merge)" stroke-width="2.4" opacity="0.9"/>
+          <path d="M420,171 C540,171 640,87 760,87" fill="none" stroke="var(--map-merge)" stroke-width="2.4" opacity="0.9"/>
+          <path d="M420,255 C540,255 640,171 760,171" fill="none" stroke="var(--map-11)" stroke-width="2.2" opacity="0.85"/>
+          <path d="M420,339 C540,339 640,255 760,255" fill="none" stroke="var(--map-11)" stroke-width="2.2" opacity="0.85"/>
+          <path d="M420,423 C540,423 640,339 760,339" fill="none" stroke="var(--map-split)" stroke-width="2.4" opacity="0.9"/>
+          <path d="M420,423 C540,423 640,423 760,423" fill="none" stroke="var(--map-split)" stroke-width="2.4" opacity="0.9"/>
+          <path d="M420,507 C540,507 640,507 760,507" fill="none" stroke="var(--map-11)" stroke-width="2.2" opacity="0.85"/>
+          <path d="M420,591 C540,591 640,591 760,591" fill="none" stroke="var(--map-11)" stroke-width="2.2" opacity="0.85"/>
+          <path d="M420,675 C540,675 640,675 760,675" fill="none" stroke="var(--map-11)" stroke-width="2.2" opacity="0.85"/>
+          <path d="M420,759 C540,759 640,759 760,759" fill="none" stroke="var(--map-cond)" stroke-width="2.2" stroke-dasharray="6,6" opacity="0.85"/>
+          <path d="M420,843 C540,843 640,843 760,843" fill="none" stroke="var(--map-new)" stroke-width="2.2" stroke-dasharray="6,6" opacity="0.85"/>
+          <path d="M420,927 C540,927 640,927 760,927" fill="none" stroke="var(--map-new)" stroke-width="2.2" stroke-dasharray="6,6" opacity="0.85"/>
 
           <!-- left nodes (기존 NPU) -->
           <g font-family="var(--font)">
@@ -1283,49 +1293,49 @@ tr.g-console .svc-chip { color:var(--plum); background:var(--plum-dim); }
 
           <!-- right nodes (글로벌 NPU) -->
           <g font-family="var(--font)">
-            <rect x="760" y="55" width="380" height="64" rx="10" fill="var(--gold-dim)" stroke="var(--gold)" stroke-opacity="0.6" stroke-width="1.2"/>
-            <text x="778" y="88" font-size="18" font-weight="800" fill="var(--gold)" font-family="monospace">dnpu_account</text>
+            <rect x="760" y="55" width="380" height="64" rx="10" fill="var(--map-merge-dim)" stroke="var(--map-merge)" stroke-opacity="0.6" stroke-width="1.2"/>
+            <text x="778" y="88" font-size="18" font-weight="800" fill="var(--map-merge)" font-family="monospace">dnpu_account</text>
             <text x="778" y="108" font-size="12.5" fill="var(--text-muted)">메인 테이블 · NPU 계정 통합</text>
 
-            <rect x="760" y="139" width="380" height="64" rx="10" fill="var(--accent-dim)" stroke="var(--accent)" stroke-opacity="0.6" stroke-width="1.2"/>
-            <text x="778" y="172" font-size="18" font-weight="800" fill="var(--accent)" font-family="monospace">fnpu_status</text>
+            <rect x="760" y="139" width="380" height="64" rx="10" fill="var(--map-11-dim)" stroke="var(--map-11)" stroke-opacity="0.6" stroke-width="1.2"/>
+            <text x="778" y="172" font-size="18" font-weight="800" fill="var(--map-11)" font-family="monospace">fnpu_status</text>
             <text x="778" y="192" font-size="12.5" fill="var(--text-muted)">팩트 · 상태 (NB/CB/ST)</text>
 
-            <rect x="760" y="223" width="380" height="64" rx="10" fill="var(--accent-dim)" stroke="var(--accent)" stroke-opacity="0.6" stroke-width="1.2"/>
-            <text x="778" y="256" font-size="18" font-weight="800" fill="var(--accent)" font-family="monospace">fnpu_login</text>
+            <rect x="760" y="223" width="380" height="64" rx="10" fill="var(--map-11-dim)" stroke="var(--map-11)" stroke-opacity="0.6" stroke-width="1.2"/>
+            <text x="778" y="256" font-size="18" font-weight="800" fill="var(--map-11)" font-family="monospace">fnpu_login</text>
             <text x="778" y="276" font-size="12.5" fill="var(--text-muted)">팩트 · 접속/플레이타임 (하위 허브)</text>
 
-            <rect x="760" y="307" width="380" height="64" rx="10" fill="var(--warn-dim)" stroke="var(--warn)" stroke-opacity="0.6" stroke-width="1.2"/>
-            <text x="778" y="340" font-size="18" font-weight="800" fill="var(--warn)" font-family="monospace">fnpu_payment_pre</text>
+            <rect x="760" y="307" width="380" height="64" rx="10" fill="var(--map-split-dim)" stroke="var(--map-split)" stroke-opacity="0.6" stroke-width="1.2"/>
+            <text x="778" y="340" font-size="18" font-weight="800" fill="var(--map-split)" font-family="monospace">fnpu_payment_pre</text>
             <text x="778" y="360" font-size="12.5" fill="var(--text-muted)">팩트 · 환율 적용 전 매출</text>
 
-            <rect x="760" y="391" width="380" height="64" rx="10" fill="var(--warn-dim)" stroke="var(--warn)" stroke-opacity="0.6" stroke-width="1.2"/>
-            <text x="778" y="424" font-size="18" font-weight="800" fill="var(--warn)" font-family="monospace">fnpu_payment</text>
+            <rect x="760" y="391" width="380" height="64" rx="10" fill="var(--map-split-dim)" stroke="var(--map-split)" stroke-opacity="0.6" stroke-width="1.2"/>
+            <text x="778" y="424" font-size="18" font-weight="800" fill="var(--map-split)" font-family="monospace">fnpu_payment</text>
             <text x="778" y="444" font-size="12.5" fill="var(--text-muted)">팩트 · 최종 매출 (환율·VAT)</text>
 
-            <rect x="760" y="475" width="380" height="64" rx="10" fill="var(--accent-dim)" stroke="var(--accent)" stroke-opacity="0.6" stroke-width="1.2"/>
-            <text x="778" y="508" font-size="18" font-weight="800" fill="var(--accent)" font-family="monospace">fnpu_main_account</text>
+            <rect x="760" y="475" width="380" height="64" rx="10" fill="var(--map-11-dim)" stroke="var(--map-11)" stroke-opacity="0.6" stroke-width="1.2"/>
+            <text x="778" y="508" font-size="18" font-weight="800" fill="var(--map-11)" font-family="monospace">fnpu_main_account</text>
             <text x="778" y="528" font-size="12.5" fill="var(--text-muted)">팩트 · 대표(메인) 계정</text>
 
-            <rect x="760" y="559" width="380" height="64" rx="10" fill="var(--accent-dim)" stroke="var(--accent)" stroke-opacity="0.6" stroke-width="1.2"/>
-            <text x="778" y="592" font-size="18" font-weight="800" fill="var(--accent)" font-family="monospace">fnpu_history</text>
+            <rect x="760" y="559" width="380" height="64" rx="10" fill="var(--map-11-dim)" stroke="var(--map-11)" stroke-opacity="0.6" stroke-width="1.2"/>
+            <text x="778" y="592" font-size="18" font-weight="800" fill="var(--map-11)" font-family="monospace">fnpu_history</text>
             <text x="778" y="612" font-size="12.5" fill="var(--text-muted)">팩트 · Key 누적 이력</text>
 
-            <rect x="760" y="643" width="380" height="64" rx="10" fill="var(--accent-dim)" stroke="var(--accent)" stroke-opacity="0.6" stroke-width="1.2"/>
-            <text x="778" y="676" font-size="18" font-weight="800" fill="var(--accent)" font-family="monospace">fnpu_bds</text>
+            <rect x="760" y="643" width="380" height="64" rx="10" fill="var(--map-11-dim)" stroke="var(--map-11)" stroke-opacity="0.6" stroke-width="1.2"/>
+            <text x="778" y="676" font-size="18" font-weight="800" fill="var(--map-11)" font-family="monospace">fnpu_bds</text>
             <text x="778" y="696" font-size="12.5" fill="var(--text-muted)">팩트 · 부정 사용자</text>
 
-            <rect x="760" y="727" width="380" height="64" rx="10" fill="var(--surface2)" stroke="var(--text-dim)" stroke-opacity="0.6" stroke-width="1.2"/>
-            <text x="778" y="760" font-size="18" font-weight="800" fill="var(--text)" font-family="monospace">fnpu_account</text>
+            <rect x="760" y="727" width="380" height="64" rx="10" fill="var(--map-cond-dim)" stroke="var(--map-cond)" stroke-opacity="0.6" stroke-width="1.2"/>
+            <text x="778" y="760" font-size="18" font-weight="800" fill="var(--map-cond)" font-family="monospace">fnpu_account</text>
             <text x="778" y="780" font-size="12.5" fill="var(--text-dim)">auth_platform='guest' 조건 추출</text>
 
             
-            <rect x="760" y="811" width="380" height="64" rx="10" fill="var(--sky-dim)" stroke="var(--sky)" stroke-opacity="0.6" stroke-width="1.2"/>
-            <text x="778" y="838" font-size="18" font-weight="800" fill="var(--sky)" font-family="monospace">dnpu_svc_appgroup</text>
+            <rect x="760" y="811" width="380" height="64" rx="10" fill="var(--map-new-dim)" stroke="var(--map-new)" stroke-opacity="0.6" stroke-width="1.2"/>
+            <text x="778" y="838" font-size="18" font-weight="800" fill="var(--map-new)" font-family="monospace">dnpu_svc_appgroup</text>
             <text x="778" y="859" font-size="12.5" fill="var(--text-muted)">디멘전 · 신규 · 기존 매핑 없음</text>
 
-            <rect x="760" y="895" width="380" height="64" rx="10" fill="var(--sky-dim)" stroke="var(--sky)" stroke-opacity="0.6" stroke-width="1.2"/>
-            <text x="778" y="922" font-size="18" font-weight="800" fill="var(--sky)" font-family="monospace">dnpu_category</text>
+            <rect x="760" y="895" width="380" height="64" rx="10" fill="var(--map-new-dim)" stroke="var(--map-new)" stroke-opacity="0.6" stroke-width="1.2"/>
+            <text x="778" y="922" font-size="18" font-weight="800" fill="var(--map-new)" font-family="monospace">dnpu_category</text>
             <text x="778" y="943" font-size="12.5" fill="var(--text-muted)">디멘전 · 신규 · 기존 매핑 없음</text>
           </g>
         </svg>
