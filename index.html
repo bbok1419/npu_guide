@@ -702,7 +702,7 @@ tr.g-console .svc-chip { color:var(--plum); background:var(--plum-dim); }
           <div class="temp-card-title"><span class="step-no">2</span>tmp_smsauth</div>
           <div class="field-label">용도</div>
           <div class="field-value">SMS 백업인증(전화번호) 정보 임시 적재. <b>dnpu_account</b>의 NPU Key(전화번호 기반) 생성에 사용</div>
-          <div class="field-label">소비 테이블</div>
+          <div class="field-label">후행 적재 테이블</div>
           <div class="field-value">dnpu_account (③)</div>
           <div class="field-label">생성 시점</div>
           <div class="field-value">dnpu_account 적재 직전 (②) · 매일 DROP &amp; CREATE</div>
@@ -711,7 +711,7 @@ tr.g-console .svc-chip { color:var(--plum); background:var(--plum-dim); }
           <div class="temp-card-title"><span class="step-no">4</span>tmp_ncj_jrm</div>
           <div class="field-label">용도</div>
           <div class="field-value">NCJ 권역 작룡문(JRM) 게임 로그 전처리. 접속·매출 집계 전 권역별 로그를 정규화</div>
-          <div class="field-label">소비 테이블</div>
+          <div class="field-label">후행 적재 테이블</div>
           <div class="field-value">fnpu_login (⑤), fnpu_payment_pre (⑥)</div>
           <div class="field-label">생성 시점</div>
           <div class="field-value">fnpu_login 적재 직전 (④) · 매일 DROP &amp; CREATE</div>
@@ -720,7 +720,7 @@ tr.g-console .svc-chip { color:var(--plum); background:var(--plum-dim); }
           <div class="temp-card-title"><span class="step-no">8</span>fnpu_bds_pre_nct</div>
           <div class="field-label">용도</div>
           <div class="field-value">NCT L2M 부정 사용자(BDS) 판정 결과 전처리. 별도 패턴 테이블 경유분을 통합 전 정리</div>
-          <div class="field-label">소비 테이블</div>
+          <div class="field-label">후행 적재 테이블</div>
           <div class="field-value">fnpu_bds (⑨)</div>
           <div class="field-label">생성 시점</div>
           <div class="field-value">fnpu_bds 적재 직전 (⑧) · 매일 DROP &amp; CREATE</div>
