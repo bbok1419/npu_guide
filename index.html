@@ -73,15 +73,15 @@ strong, b { color: var(--heading); }
 }
 .header-left { display:flex; align-items:center; gap:10px; }
 .header-bar { width:4px; height:28px; background:var(--accent); border-radius:2px; }
-.header-title { font-size:20px; font-weight:700; color:var(--heading); display:flex; align-items:center; gap:9px; }
+.header-title { font-size:20.5px; font-weight:700; color:var(--heading); display:flex; align-items:center; gap:9px; }
 .header-title em { font-style:normal; color:var(--accent); }
 .header-globe { flex-shrink:0; }
 .header-badge {
   background:var(--accent-dim); color:var(--accent);
   border:1px solid rgba(56,189,248,.3); border-radius:4px;
-  padding:2px 9px; font-size:11px; font-weight:700;
+  padding:2px 9px; font-size:11.5px; font-weight:700;
 }
-.header-meta { color:var(--text-muted); font-size:12px; }
+.header-meta { color:var(--text-muted); font-size:12.5px; }
 
 .tab-bar {
   background:var(--panel); border-bottom:1px solid var(--border);
@@ -89,7 +89,7 @@ strong, b { color: var(--heading); }
   overflow-x:auto;
 }
 .tab-btn {
-  padding:14px 22px; font-size:15px; font-weight:600; color:var(--text-muted);
+  padding:14px 22px; font-size:15.5px; font-weight:600; color:var(--text-muted);
   border:none; background:none; cursor:pointer;
   border-bottom:3px solid transparent; transition:all .2s; font-family:var(--font);
   white-space:nowrap;
@@ -112,7 +112,7 @@ strong, b { color: var(--heading); }
   content:''; display:inline-block; width:3px; height:17px;
   background:var(--accent); border-radius:2px; flex-shrink:0;
 }
-.card-title .hint { font-size:13px; font-weight:500; color:var(--accent); opacity:.8; }
+.card-title .hint { font-size:13.5px; font-weight:500; color:var(--accent); opacity:.8; }
 
 .body-text { font-size:14.5px; color:var(--text); line-height:1.9; margin-bottom:8px; }
 .body-text .muted { color:var(--text-muted); }
@@ -144,10 +144,10 @@ strong, b { color: var(--heading); }
 }
 .compare-box.old { border-left:3px solid var(--text-dim); }
 .compare-box.new { border-left:3px solid var(--accent); }
-.compare-label { font-size:11px; font-weight:800; letter-spacing:.5px; text-transform:uppercase; margin-bottom:6px; }
+.compare-label { font-size:11.5px; font-weight:800; letter-spacing:.5px; text-transform:uppercase; margin-bottom:6px; }
 .compare-box.old .compare-label { color:var(--text-dim); }
 .compare-box.new .compare-label { color:var(--accent); }
-.compare-value { font-size:14px; color:var(--text); font-weight:600; line-height:1.6; }
+.compare-value { font-size:14.5px; color:var(--text); font-weight:600; line-height:1.6; }
 .compare-arrow { display:flex; align-items:center; justify-content:center; color:var(--accent); font-size:18px; font-weight:700; }
 
 .bc-table { width:100%; border-collapse:collapse; font-size:13.5px; }
@@ -158,8 +158,8 @@ strong, b { color: var(--heading); }
 }
 .bc-table td { padding:10px 12px; border-bottom:1px solid var(--border); vertical-align:top; }
 .bc-table tbody tr:last-child td { border-bottom:none; }
-.bc-table .old-col { color:var(--text-muted); font-family:monospace; font-size:13px; }
-.bc-table .new-col { color:var(--accent); font-family:monospace; font-size:13px; font-weight:700; }
+.bc-table .old-col { color:var(--text-muted); font-family:monospace; font-size:13.5px; }
+.bc-table .new-col { color:var(--accent); font-family:monospace; font-size:13.5px; font-weight:700; }
 .bc-table .note-col { color:var(--text-muted); }
 
 .svc-search-bar { display:flex; align-items:center; gap:10px; margin:10px 0 12px; }
@@ -171,12 +171,12 @@ strong, b { color: var(--heading); }
 .svc-search-input:focus { border-color:var(--accent); }
 .svc-search-input::placeholder { color:var(--text-dim); }
 .svc-search-count {
-  font-size:12px; font-weight:700; color:var(--accent); white-space:nowrap;
+  font-size:12.5px; font-weight:700; color:var(--accent); white-space:nowrap;
   background:var(--accent-dim, rgba(255,255,255,.06)); border:1px solid var(--border2);
   padding:5px 12px; border-radius:20px;
 }
 .svc-table-wrap { max-height:560px; overflow:auto; border:1px solid var(--border); border-radius:10px; }
-.svc-table { font-size:13px; }
+.svc-table { font-size:13.5px; }
 .svc-table thead th {
   position:sticky; top:0; z-index:2; background:var(--surface);
   box-shadow:0 1px 0 var(--border);
@@ -187,13 +187,13 @@ strong, b { color: var(--heading); }
 .svc-table tbody tr:not(.svc-group) td:nth-child(2) { color:var(--text); font-weight:600; }
 .svc-table tr.svc-group td {
   background:var(--surface); color:var(--text-muted);
-  font-size:11px; font-weight:800; letter-spacing:.8px; text-transform:uppercase;
+  font-size:11.5px; font-weight:800; letter-spacing:.8px; text-transform:uppercase;
   padding:7px 12px; border-top:1px solid var(--border);
   position:sticky; top:35px; z-index:1;
 }
 .svc-table tr.svc-group td::before { content:"▎"; color:var(--accent); margin-right:6px; }
 .svc-chip {
-  display:inline-block; font-family:monospace; font-size:12px;
+  display:inline-block; font-family:monospace; font-size:12.5px;
   color:var(--sky); background:var(--sky-dim);
   padding:1px 9px; border-radius:5px; line-height:1.8;
 }
@@ -222,7 +222,7 @@ tr.g-console .svc-chip { color:var(--plum); background:var(--plum-dim); }
 }
 .genre-box.etc { border-top-color:var(--text-dim); }
 .genre-title {
-  font-size:12px; font-weight:800; letter-spacing:.6px; text-transform:uppercase;
+  font-size:12.5px; font-weight:800; letter-spacing:.6px; text-transform:uppercase;
   color:var(--accent); margin-bottom:4px;
 }
 .genre-box.etc .genre-title { color:var(--text-muted); }
@@ -241,11 +241,11 @@ tr.g-console .svc-chip { color:var(--plum); background:var(--plum-dim); }
 .genre-sub { font-size:11.5px; color:var(--text-dim); margin-bottom:8px; line-height:1.5; }
 .genre-item { font-size:13.5px; color:var(--text); padding:5px 0; border-bottom:1px solid var(--border); line-height:1.6; }
 .genre-item:last-child { border-bottom:none; }
-.genre-item .gi-note { font-size:12px; color:var(--text-dim); }
+.genre-item .gi-note { font-size:12.5px; color:var(--text-dim); }
 
 .query-item { margin-top:18px; }
 .query-item:first-of-type { margin-top:12px; }
-.query-title { font-size:14px; font-weight:700; color:var(--heading); margin-bottom:3px; display:flex; gap:8px; align-items:center; }
+.query-title { font-size:14.5px; font-weight:700; color:var(--heading); margin-bottom:3px; display:flex; gap:8px; align-items:center; }
 .query-badge {
   font-size:10.5px; font-weight:800; letter-spacing:.4px; text-transform:uppercase;
   padding:1px 9px; border-radius:10px; flex-shrink:0;
@@ -266,7 +266,7 @@ tr.g-console .svc-chip { color:var(--plum); background:var(--plum-dim); }
 
 .badge {
   display:inline-block; padding:2px 9px; border-radius:4px;
-  font-size:12px; font-weight:700; margin-right:4px;
+  font-size:12.5px; font-weight:700; margin-right:4px;
 }
 .badge.format { background:var(--gold-dim); color:var(--gold); }
 .badge.status { background:var(--warn-dim); color:var(--warn); }
@@ -274,13 +274,13 @@ tr.g-console .svc-chip { color:var(--plum); background:var(--plum-dim); }
 .toc-list { list-style:none; }
 .toc-list li {
   padding:10px 4px; border-bottom:1px solid var(--border);
-  font-size:14px; color:var(--text-muted);
+  font-size:14.5px; color:var(--text-muted);
 }
 .toc-list li:last-child { border-bottom:none; }
 .toc-list b { color:var(--text); }
 
 .diagram-legend { display:flex; flex-wrap:wrap; gap:18px; margin-bottom:16px; }
-.lg-item { display:flex; align-items:center; gap:7px; font-size:13px; color:var(--text-muted); }
+.lg-item { display:flex; align-items:center; gap:7px; font-size:13.5px; color:var(--text-muted); }
 .lg-line { display:inline-block; width:22px; height:0; border-top-width:2.5px; border-top-style:solid; }
 .lg-normal { border-color:var(--map-11); }
 .lg-merge  { border-color:var(--map-merge); }
@@ -312,17 +312,17 @@ tr.g-console .svc-chip { color:var(--plum); background:var(--plum-dim); }
 .kpi.c-teal::before   { background:#778873; }
 .kpi.c-gold::before   { background:#86BCBD; }
 .kpi-label {
-  font-size:12px; font-weight:700; color:var(--text-muted);
+  font-size:12.5px; font-weight:700; color:var(--text-muted);
   text-transform:uppercase; letter-spacing:.4px; margin-bottom:10px;
 }
-.kpi-value { font-size:30px; font-weight:800; color:var(--heading); line-height:1; }
+.kpi-value { font-size:30.5px; font-weight:800; color:var(--heading); line-height:1; }
 .kpi.c-accent .kpi-value { color:#213448; }
 .kpi.c-sky .kpi-value    { color:#427AB5; }
 .kpi.c-teal .kpi-value   { color:#778873; }
 .kpi.c-gold .kpi-value   { color:#86BCBD; }
 
 .legend-row { display:flex; flex-wrap:wrap; gap:18px; margin-bottom:16px; }
-.legend-item { display:flex; align-items:center; gap:7px; font-size:13px; color:var(--text-muted); }
+.legend-item { display:flex; align-items:center; gap:7px; font-size:13.5px; color:var(--text-muted); }
 .legend-dot { display:inline-block; width:10px; height:10px; border-radius:50%; flex-shrink:0; }
 
 .chart-box { margin-bottom:8px; }
@@ -330,7 +330,7 @@ tr.g-console .svc-chip { color:var(--plum); background:var(--plum-dim); }
 
 .format-compare-btn {
   background:none; border:none; color:var(--accent); cursor:pointer;
-  font-size:12px; text-decoration:underline; padding:0; margin-left:6px;
+  font-size:12.5px; text-decoration:underline; padding:0; margin-left:6px;
   font-weight:600; transition:opacity .2s;
 }
 .format-compare-btn:hover { opacity:0.7; }
@@ -347,7 +347,7 @@ tr.g-console .svc-chip { color:var(--plum); background:var(--plum-dim); }
   max-height:80vh; overflow-y:auto;
 }
 .modal-header {
-  font-size:20px; font-weight:800; color:var(--heading); margin-bottom:20px;
+  font-size:20.5px; font-weight:800; color:var(--heading); margin-bottom:20px;
   display:flex; justify-content:space-between; align-items:center;
 }
 .modal-close {
@@ -364,7 +364,7 @@ tr.g-console .svc-chip { color:var(--plum); background:var(--plum-dim); }
 .format-compare-table th {
   background:var(--surface); padding:12px; text-align:left;
   font-weight:700; color:var(--text-muted); border-bottom:2px solid var(--border);
-  font-size:12px;
+  font-size:12.5px;
 }
 .format-compare-table td {
   padding:12px; border-bottom:1px solid var(--border); vertical-align:top;
@@ -383,7 +383,7 @@ tr.g-console .svc-chip { color:var(--plum); background:var(--plum-dim); }
   padding:16px 18px;
 }
 .temp-card-title {
-  font-size:14px; font-weight:800; color:var(--gold); margin-bottom:12px;
+  font-size:14.5px; font-weight:800; color:var(--gold); margin-bottom:12px;
   font-family:monospace; display:flex; align-items:center; gap:6px;
 }
 .temp-card-title .step-no {
@@ -397,16 +397,16 @@ tr.g-console .svc-chip { color:var(--plum); background:var(--plum-dim); }
   background:var(--surface); border:1px solid var(--border2); border-radius:10px;
   padding:14px 16px;
 }
-.erd-card-title { font-family:monospace; font-weight:800; font-size:15.5px; color:var(--heading); margin-bottom:2px; }
-.erd-card-sub { font-size:11.5px; color:var(--text-muted); margin-bottom:10px; }
+.erd-card-title { font-family:monospace; font-weight:800; font-size:15.5px; color:#000000; margin-bottom:2px; }
+.erd-card-sub { font-size:12.5px; color:var(--text-muted); margin-bottom:10px; }
 .erd-field-row {
   display:flex; align-items:baseline; gap:8px;
   font-size:12.5px; padding:5px 0; border-bottom:1px solid var(--border);
 }
 .erd-field-row:last-child { border-bottom:none; }
-.erd-field-row .fn { font-family:monospace; font-weight:600; color:var(--text-muted); flex-shrink:0; }
+.erd-field-row .fn { font-family:monospace; font-weight:600; color:#000000; flex-shrink:0; }
 .erd-field-row .ft {
-  font-family:monospace; font-size:11px; color:var(--sky);
+  font-family:monospace; font-size:11.5px; color:var(--sky);
   background:var(--sky-dim); padding:0 6px; border-radius:4px; flex-shrink:0;
 }
 .erd-field-row .fd { color:var(--text); text-align:right; margin-left:auto; }
@@ -434,7 +434,7 @@ tr.g-console .svc-chip { color:var(--plum); background:var(--plum-dim); }
   display:flex; align-items:center; justify-content:center;
   font-weight:800; font-size:12.5px; flex-shrink:0; margin-top:1px;
 }
-.goal-title { font-size:14px; font-weight:700; color:var(--heading); margin-bottom:5px; line-height:1.5; }
+.goal-title { font-size:14.5px; font-weight:700; color:var(--heading); margin-bottom:5px; line-height:1.5; }
 .goal-sub { font-size:12.5px; color:var(--text-muted); line-height:1.7; }
 
 ::-webkit-scrollbar { width:6px; height:6px; }
@@ -682,7 +682,7 @@ tr.g-console .svc-chip { color:var(--plum); background:var(--plum-dim); }
       <div class="body-text" style="color:var(--text-muted);">
         <b>글로벌 NPU가 Apache Iceberg (format-version=2)를 채택한 이유:</b>
       </div>
-      <ul style="padding-left:20px; margin-top:8px; font-size:14px; color:var(--text); line-height:1.8;">
+      <ul style="padding-left:20px; margin-top:8px; font-size:14.5px; color:var(--text); line-height:1.8;">
         <li><b>다중 권역에서 빈번한 스키마 변경 필요:</b> 기존 데이터와 호환성을 유지하면서 새로운 컬럼 추가 가능</li>
         <li><b>대규모 데이터의 삭제/업데이트 작업 효율화:</b> V2의 Position Delete로 삭제 연산 성능 대폭 향상</li>
         <li><b>장기적인 데이터 관리 안정성:</b> ACID 트랜잭션 보장 및 별도 메타스토어로 안정적인 버전 추적</li>
@@ -749,86 +749,86 @@ tr.g-console .svc-chip { color:var(--plum); background:var(--plum-dim); }
 
           <!-- self-reference / cumulative history dashed connector (fnpu_status -> fnpu_history) -->
           <path d="M1140,480 C1140,510 1140,510 1140,535" fill="none" stroke="var(--text-dim)" stroke-width="2" stroke-dasharray="5,5"/>
-          <text x="1180" y="510" text-anchor="middle" font-size="12.5" fill="var(--text-dim)" font-family="var(--font)">누적 참조</text>
+          <text x="1180" y="510" text-anchor="middle" font-size="13" fill="var(--text-dim)" font-family="var(--font)">누적 참조</text>
 
           <g font-family="var(--font)">
             <!-- 1 dnpu_svc_appgroup (dim) -->
             <rect x="15" y="55" width="300" height="105" rx="10" fill="var(--sky-dim)" stroke="var(--sky)" stroke-opacity="0.55" stroke-width="1.3"/>
-            <circle cx="41" cy="83" r="18" fill="var(--sky)"/><text x="41" y="88" text-anchor="middle" font-size="16" font-weight="800" fill="var(--bg)">1</text>
-            <text x="68" y="91" font-size="20" font-weight="700" fill="var(--text)" font-family="monospace">dnpu_svc_appgroup</text>
-            <text x="41" y="132" font-size="14.5" fill="var(--text-muted)">디멘전</text>
+            <circle cx="41" cy="83" r="18" fill="var(--sky)"/><text x="41" y="88" text-anchor="middle" font-size="16.5" font-weight="800" fill="var(--bg)">1</text>
+            <text x="68" y="91" font-size="20.5" font-weight="700" fill="var(--text)" font-family="var(--font)">dnpu_svc_appgroup</text>
+            <text x="41" y="132" font-size="16" fill="var(--text-muted)">디멘전</text>
 
             <!-- 2 dnpu_category (dim, NEW) -->
             <rect x="340" y="55" width="300" height="105" rx="10" fill="var(--sky-dim)" stroke="var(--sky)" stroke-opacity="0.55" stroke-width="1.3"/>
-            <circle cx="366" cy="83" r="18" fill="var(--sky)"/><text x="366" y="88" text-anchor="middle" font-size="16" font-weight="800" fill="var(--bg)">2</text>
-            <text x="393" y="91" font-size="20" font-weight="700" fill="var(--text)" font-family="monospace">dnpu_category</text>
-            <text x="366" y="132" font-size="14.5" fill="var(--text-muted)">디멘전 · 신규</text>
+            <circle cx="366" cy="83" r="18" fill="var(--sky)"/><text x="366" y="88" text-anchor="middle" font-size="16.5" font-weight="800" fill="var(--bg)">2</text>
+            <text x="393" y="91" font-size="20.5" font-weight="700" fill="var(--text)" font-family="var(--font)">dnpu_category</text>
+            <text x="366" y="132" font-size="16" fill="var(--text-muted)">디멘전 · 신규</text>
 
             <!-- 3 tmp_smsauth (temp) -->
             <rect x="665" y="55" width="300" height="105" rx="10" fill="var(--gold-dim)" stroke="var(--gold)" stroke-opacity="0.75" stroke-width="1.3"/>
-            <circle cx="691" cy="83" r="18" fill="var(--gold)"/><text x="691" y="88" text-anchor="middle" font-size="16" font-weight="800" fill="var(--bg)">3</text>
-            <text x="718" y="91" font-size="20" font-weight="700" fill="var(--text)" font-family="monospace">tmp_smsauth</text>
-            <text x="691" y="132" font-size="14.5" fill="var(--text-muted)">임시 · DROP&amp;CREATE</text>
+            <circle cx="691" cy="83" r="18" fill="var(--gold)"/><text x="691" y="88" text-anchor="middle" font-size="16.5" font-weight="800" fill="var(--bg)">3</text>
+            <text x="718" y="91" font-size="20.5" font-weight="700" fill="var(--text)" font-family="var(--font)">tmp_smsauth</text>
+            <text x="691" y="132" font-size="16" fill="var(--text-muted)">임시 · DROP&amp;CREATE</text>
 
             <!-- 4 dnpu_account (dim) -->
             <rect x="990" y="55" width="300" height="105" rx="10" fill="var(--sky-dim)" stroke="var(--sky)" stroke-opacity="0.55" stroke-width="1.3"/>
-            <circle cx="1016" cy="83" r="18" fill="var(--sky)"/><text x="1016" y="88" text-anchor="middle" font-size="16" font-weight="800" fill="var(--bg)">4</text>
-            <text x="1043" y="91" font-size="20" font-weight="700" fill="var(--text)" font-family="monospace">dnpu_account</text>
-            <text x="1016" y="132" font-size="14.5" fill="var(--text-muted)">디멘전</text>
+            <circle cx="1016" cy="83" r="18" fill="var(--sky)"/><text x="1016" y="88" text-anchor="middle" font-size="16.5" font-weight="800" fill="var(--bg)">4</text>
+            <text x="1043" y="91" font-size="20.5" font-weight="700" fill="var(--text)" font-family="var(--font)">dnpu_account</text>
+            <text x="1016" y="132" font-size="16" fill="var(--text-muted)">디멘전</text>
 
             <!-- 5 tmp_ncj_jrm (temp) -->
             <rect x="15" y="215" width="300" height="105" rx="10" fill="var(--gold-dim)" stroke="var(--gold)" stroke-opacity="0.75" stroke-width="1.3"/>
-            <circle cx="41" cy="243" r="18" fill="var(--gold)"/><text x="41" y="248" text-anchor="middle" font-size="16" font-weight="800" fill="var(--bg)">5</text>
-            <text x="68" y="251" font-size="20" font-weight="700" fill="var(--text)" font-family="monospace">tmp_ncj_jrm</text>
-            <text x="41" y="292" font-size="14.5" fill="var(--text-muted)">임시 · DROP&amp;CREATE</text>
+            <circle cx="41" cy="243" r="18" fill="var(--gold)"/><text x="41" y="248" text-anchor="middle" font-size="16.5" font-weight="800" fill="var(--bg)">5</text>
+            <text x="68" y="251" font-size="20.5" font-weight="700" fill="var(--text)" font-family="var(--font)">tmp_ncj_jrm</text>
+            <text x="41" y="292" font-size="16" fill="var(--text-muted)">임시 · DROP&amp;CREATE</text>
 
             <!-- 6 fnpu_login (fact) -->
             <rect x="340" y="215" width="300" height="105" rx="10" fill="var(--teal-dim)" stroke="var(--teal)" stroke-opacity="0.55" stroke-width="1.3"/>
-            <circle cx="366" cy="243" r="18" fill="var(--teal)"/><text x="366" y="248" text-anchor="middle" font-size="16" font-weight="800" fill="var(--bg)">6</text>
-            <text x="393" y="251" font-size="20" font-weight="700" fill="var(--text)" font-family="monospace">fnpu_login</text>
-            <text x="366" y="292" font-size="14.5" fill="var(--text-muted)">팩트</text>
+            <circle cx="366" cy="243" r="18" fill="var(--teal)"/><text x="366" y="248" text-anchor="middle" font-size="16.5" font-weight="800" fill="var(--bg)">6</text>
+            <text x="393" y="251" font-size="20.5" font-weight="700" fill="var(--text)" font-family="var(--font)">fnpu_login</text>
+            <text x="366" y="292" font-size="16" fill="var(--text-muted)">팩트</text>
 
             <!-- 7 fnpu_payment_pre (fact) -->
             <rect x="665" y="215" width="300" height="105" rx="10" fill="var(--teal-dim)" stroke="var(--teal)" stroke-opacity="0.55" stroke-width="1.3"/>
-            <circle cx="691" cy="243" r="18" fill="var(--teal)"/><text x="691" y="248" text-anchor="middle" font-size="16" font-weight="800" fill="var(--bg)">7</text>
-            <text x="718" y="251" font-size="20" font-weight="700" fill="var(--text)" font-family="monospace">fnpu_payment_pre</text>
-            <text x="691" y="292" font-size="14.5" fill="var(--text-muted)">팩트</text>
+            <circle cx="691" cy="243" r="18" fill="var(--teal)"/><text x="691" y="248" text-anchor="middle" font-size="16.5" font-weight="800" fill="var(--bg)">7</text>
+            <text x="718" y="251" font-size="20.5" font-weight="700" fill="var(--text)" font-family="var(--font)">fnpu_payment_pre</text>
+            <text x="691" y="292" font-size="16" fill="var(--text-muted)">팩트</text>
 
             <!-- 8 fnpu_payment (fact) -->
-            <rect x="990" y="215" width="300" height="105" rx="10" fill="var(--teal-dim)" stroke="var(--teal)" stroke-opacity="0.55" stroke-width="1.3"/>
-            <circle cx="1016" cy="243" r="18" fill="var(--teal)"/><text x="1016" y="248" text-anchor="middle" font-size="16" font-weight="800" fill="var(--bg)">8</text>
-            <text x="1043" y="251" font-size="20" font-weight="700" fill="var(--text)" font-family="monospace">fnpu_payment</text>
-            <text x="1016" y="292" font-size="14.5" fill="var(--text-muted)">팩트</text>
+            <rect x="990" y="215" width="300" height="105" rx="10" fill="var(--map-split-dim)" stroke="var(--map-split)" stroke-opacity="0.55" stroke-width="1.3"/>
+            <circle cx="1016" cy="243" r="18" fill="var(--map-split)"/><text x="1016" y="248" text-anchor="middle" font-size="16.5" font-weight="800" fill="var(--bg)">8</text>
+            <text x="1043" y="251" font-size="20.5" font-weight="700" fill="var(--text)" font-family="var(--font)">fnpu_payment</text>
+            <text x="1016" y="292" font-size="16" fill="var(--text-muted)">팩트</text>
 
             <!-- 9 fnpu_bds_pre_nct (temp) -->
             <rect x="15" y="375" width="300" height="105" rx="10" fill="var(--gold-dim)" stroke="var(--gold)" stroke-opacity="0.75" stroke-width="1.3"/>
-            <circle cx="41" cy="403" r="18" fill="var(--gold)"/><text x="41" y="408" text-anchor="middle" font-size="16" font-weight="800" fill="var(--bg)">9</text>
-            <text x="68" y="411" font-size="20" font-weight="700" fill="var(--text)" font-family="monospace">fnpu_bds_pre_nct</text>
-            <text x="41" y="452" font-size="14.5" fill="var(--text-muted)">임시 · DROP&amp;CREATE</text>
+            <circle cx="41" cy="403" r="18" fill="var(--gold)"/><text x="41" y="408" text-anchor="middle" font-size="16.5" font-weight="800" fill="var(--bg)">9</text>
+            <text x="68" y="411" font-size="20.5" font-weight="700" fill="var(--text)" font-family="var(--font)">fnpu_bds_pre_nct</text>
+            <text x="41" y="452" font-size="16" fill="var(--text-muted)">임시 · DROP&amp;CREATE</text>
 
             <!-- 10 fnpu_bds (fact) -->
             <rect x="340" y="375" width="300" height="105" rx="10" fill="var(--teal-dim)" stroke="var(--teal)" stroke-opacity="0.55" stroke-width="1.3"/>
             <circle cx="368" cy="403" r="18" fill="var(--teal)"/><text x="368" y="408" text-anchor="middle" font-size="15" font-weight="800" fill="var(--bg)">10</text>
-            <text x="395" y="411" font-size="20" font-weight="700" fill="var(--text)" font-family="monospace">fnpu_bds</text>
-            <text x="368" y="452" font-size="14.5" fill="var(--text-muted)">팩트</text>
+            <text x="395" y="411" font-size="20.5" font-weight="700" fill="var(--text)" font-family="var(--font)">fnpu_bds</text>
+            <text x="368" y="452" font-size="16" fill="var(--text-muted)">팩트</text>
 
             <!-- 11 fnpu_main_account (fact) -->
             <rect x="665" y="375" width="300" height="105" rx="10" fill="var(--teal-dim)" stroke="var(--teal)" stroke-opacity="0.55" stroke-width="1.3"/>
             <circle cx="693" cy="403" r="18" fill="var(--teal)"/><text x="693" y="408" text-anchor="middle" font-size="15" font-weight="800" fill="var(--bg)">11</text>
-            <text x="720" y="411" font-size="20" font-weight="700" fill="var(--text)" font-family="monospace">fnpu_main_account</text>
-            <text x="693" y="452" font-size="14.5" fill="var(--text-muted)">팩트</text>
+            <text x="720" y="411" font-size="20.5" font-weight="700" fill="var(--text)" font-family="var(--font)">fnpu_main_account</text>
+            <text x="693" y="452" font-size="16" fill="var(--text-muted)">팩트</text>
 
             <!-- 12 fnpu_status (fact) -->
             <rect x="990" y="375" width="300" height="105" rx="10" fill="var(--teal-dim)" stroke="var(--teal)" stroke-opacity="0.55" stroke-width="1.3"/>
             <circle cx="1018" cy="403" r="18" fill="var(--teal)"/><text x="1018" y="408" text-anchor="middle" font-size="15" font-weight="800" fill="var(--bg)">12</text>
-            <text x="1045" y="411" font-size="20" font-weight="700" fill="var(--text)" font-family="monospace">fnpu_status</text>
-            <text x="1018" y="452" font-size="14.5" fill="var(--text-muted)">팩트</text>
+            <text x="1045" y="411" font-size="20.5" font-weight="700" fill="var(--text)" font-family="var(--font)">fnpu_status</text>
+            <text x="1018" y="452" font-size="16" fill="var(--text-muted)">팩트</text>
 
             <!-- 13 fnpu_history (fact) -->
             <rect x="990" y="535" width="300" height="105" rx="10" fill="var(--teal-dim)" stroke="var(--teal)" stroke-opacity="0.55" stroke-width="1.3"/>
             <circle cx="1016" cy="563" r="18" fill="var(--teal)"/><text x="1016" y="568" text-anchor="middle" font-size="15" font-weight="800" fill="var(--bg)">13</text>
-            <text x="1043" y="571" font-size="20" font-weight="700" fill="var(--text)" font-family="monospace">fnpu_history</text>
-            <text x="1016" y="612" font-size="14.5" fill="var(--text-muted)">팩트</text>
+            <text x="1043" y="571" font-size="20.5" font-weight="700" fill="var(--text)" font-family="var(--font)">fnpu_history</text>
+            <text x="1016" y="612" font-size="16" fill="var(--text-muted)">팩트</text>
           </g>
         </svg>
       </div>
@@ -1159,50 +1159,50 @@ tr.g-console .svc-chip { color:var(--plum); background:var(--plum-dim); }
             <g font-family="var(--font)">
               <!-- Row A : dnpu_account (root) + fnpu_payment_pre -->
               <rect x="430" y="40" width="320" height="90" rx="12" fill="var(--map-merge-dim)" stroke="var(--map-merge)" stroke-opacity="0.55" stroke-width="1.5"/>
-              <text x="452" y="80" font-size="18" font-weight="800" fill="var(--map-merge)" font-family="monospace">dnpu_account</text>
-              <text x="452" y="107" font-size="12.5" fill="var(--text-muted)">메인 테이블 · NPU 계정 통합 (원천)</text>
+              <text x="452" y="80" font-size="18.5" font-weight="800" fill="var(--map-merge)" font-family="var(--font)">dnpu_account</text>
+              <text x="452" y="107" font-size="14" fill="var(--text-muted)">메인 테이블 · NPU 계정 통합 (원천)</text>
 
               <rect x="820" y="40" width="320" height="90" rx="12" fill="var(--map-split-dim)" stroke="var(--map-split)" stroke-opacity="0.55" stroke-width="1.5"/>
-              <text x="842" y="80" font-size="18" font-weight="800" fill="var(--map-split)" font-family="monospace">fnpu_payment_pre</text>
-              <text x="842" y="107" font-size="12.5" fill="var(--text-muted)">팩트 · 환율 적용 전 매출</text>
+              <text x="842" y="80" font-size="18.5" font-weight="800" fill="var(--map-split)" font-family="var(--font)">fnpu_payment_pre</text>
+              <text x="842" y="107" font-size="14" fill="var(--text-muted)">팩트 · 환율 적용 전 매출</text>
 
               <!-- Row B : fnpu_login (하위 허브, 강조) + fnpu_payment -->
               <rect x="430" y="230" width="320" height="90" rx="12" fill="var(--map-11-dim)" stroke="var(--map-11)" stroke-opacity="0.8" stroke-width="2.2"/>
-              <text x="452" y="270" font-size="18" font-weight="800" fill="var(--map-11)" font-family="monospace">fnpu_login</text>
-              <text x="452" y="297" font-size="12.5" fill="var(--text-muted)">팩트 · 접속/플레이타임 (하위 허브)</text>
+              <text x="452" y="270" font-size="18.5" font-weight="800" fill="var(--map-11)" font-family="var(--font)">fnpu_login</text>
+              <text x="452" y="297" font-size="14" fill="var(--text-muted)">팩트 · 접속/플레이타임 (하위 허브)</text>
 
               <rect x="820" y="230" width="320" height="90" rx="12" fill="var(--map-split-dim)" stroke="var(--map-split)" stroke-opacity="0.55" stroke-width="1.5"/>
-              <text x="842" y="270" font-size="18" font-weight="800" fill="var(--map-split)" font-family="monospace">fnpu_payment</text>
-              <text x="842" y="297" font-size="12.5" fill="var(--text-muted)">팩트 · 최종 매출 (환율·VAT)</text>
+              <text x="842" y="270" font-size="18.5" font-weight="800" fill="var(--map-split)" font-family="var(--font)">fnpu_payment</text>
+              <text x="842" y="297" font-size="14" fill="var(--text-muted)">팩트 · 최종 매출 (환율·VAT)</text>
 
               <!-- Row C : fnpu_login 파생 (status / main_account / bds) -->
               <rect x="40" y="420" width="320" height="90" rx="12" fill="var(--map-11-dim)" stroke="var(--map-11)" stroke-opacity="0.55" stroke-width="1.5"/>
-              <text x="62" y="460" font-size="18" font-weight="800" fill="var(--map-11)" font-family="monospace">fnpu_status</text>
-              <text x="62" y="487" font-size="12.5" fill="var(--text-muted)">팩트 · 상태 (NB/CB/ST)</text>
+              <text x="62" y="460" font-size="18.5" font-weight="800" fill="var(--map-11)" font-family="var(--font)">fnpu_status</text>
+              <text x="62" y="487" font-size="14" fill="var(--text-muted)">팩트 · 상태 (NB/CB/ST)</text>
 
               <rect x="430" y="420" width="320" height="90" rx="12" fill="var(--map-11-dim)" stroke="var(--map-11)" stroke-opacity="0.55" stroke-width="1.5"/>
-              <text x="452" y="460" font-size="18" font-weight="800" fill="var(--map-11)" font-family="monospace">fnpu_main_account</text>
-              <text x="452" y="487" font-size="12.5" fill="var(--text-muted)">팩트 · 대표(메인) 계정</text>
+              <text x="452" y="460" font-size="18.5" font-weight="800" fill="var(--map-11)" font-family="var(--font)">fnpu_main_account</text>
+              <text x="452" y="487" font-size="14" fill="var(--text-muted)">팩트 · 대표(메인) 계정</text>
 
               <rect x="820" y="420" width="320" height="90" rx="12" fill="var(--map-11-dim)" stroke="var(--map-11)" stroke-opacity="0.55" stroke-width="1.5"/>
-              <text x="842" y="460" font-size="18" font-weight="800" fill="var(--map-11)" font-family="monospace">fnpu_bds</text>
-              <text x="842" y="487" font-size="12.5" fill="var(--text-muted)">팩트 · 부정 사용자</text>
+              <text x="842" y="460" font-size="18.5" font-weight="800" fill="var(--map-11)" font-family="var(--font)">fnpu_bds</text>
+              <text x="842" y="487" font-size="14" fill="var(--text-muted)">팩트 · 부정 사용자</text>
 
               <!-- Row D : fnpu_history (fnpu_status 누적 이력) -->
               <rect x="40" y="610" width="320" height="90" rx="12" fill="var(--map-11-dim)" stroke="var(--map-11)" stroke-opacity="0.55" stroke-width="1.5"/>
-              <text x="62" y="650" font-size="18" font-weight="800" fill="var(--map-11)" font-family="monospace">fnpu_history</text>
-              <text x="62" y="677" font-size="12.5" fill="var(--text-muted)">팩트 · Key 누적 이력</text>
+              <text x="62" y="650" font-size="18.5" font-weight="800" fill="var(--map-11)" font-family="var(--font)">fnpu_history</text>
+              <text x="62" y="677" font-size="14" fill="var(--text-muted)">팩트 · Key 누적 이력</text>
 
               <!-- Row E : 독립 코드성(기준정보) 테이블 -->
-              <text x="590" y="738" text-anchor="middle" font-size="13" fill="var(--text-dim)" font-style="italic">독립 코드성(기준정보) 테이블 — 다른 테이블과 직접 관계선 없음</text>
+              <text x="590" y="738" text-anchor="middle" font-size="14" fill="var(--text-dim)" font-style="italic">독립 코드성(기준정보) 테이블 — 다른 테이블과 직접 관계선 없음</text>
 
               <rect x="235" y="760" width="320" height="90" rx="12" fill="var(--map-new-dim)" stroke="var(--map-new)" stroke-opacity="0.55" stroke-width="1.5" stroke-dasharray="6,5"/>
-              <text x="257" y="800" font-size="18" font-weight="800" fill="var(--map-new)" font-family="monospace">dnpu_svc_appgroup</text>
-              <text x="257" y="827" font-size="12.5" fill="var(--text-muted)">독립 코드성 테이블 (별도)</text>
+              <text x="257" y="800" font-size="18.5" font-weight="800" fill="var(--map-new)" font-family="var(--font)">dnpu_svc_appgroup</text>
+              <text x="257" y="827" font-size="15" fill="var(--text-muted)">독립 코드성 테이블 (별도)</text>
 
               <rect x="625" y="760" width="320" height="90" rx="12" fill="var(--map-new-dim)" stroke="var(--map-new)" stroke-opacity="0.55" stroke-width="1.5" stroke-dasharray="6,5"/>
-              <text x="647" y="800" font-size="18" font-weight="800" fill="var(--map-new)" font-family="monospace">dnpu_category</text>
-              <text x="647" y="827" font-size="12.5" fill="var(--text-muted)">디멘전 · 신규 · 독립 코드성</text>
+              <text x="647" y="800" font-size="18.5" font-weight="800" fill="var(--map-new)" font-family="var(--font)">dnpu_category</text>
+              <text x="647" y="827" font-size="15" fill="var(--text-muted)">디멘전 · 신규 · 독립 코드성</text>
             </g>
           </svg>
       </div>
@@ -1360,8 +1360,8 @@ tr.g-console .svc-chip { color:var(--plum); background:var(--plum-dim); }
 
       <div class="chart-box">
         <svg viewBox="0 0 1180 975" xmlns="http://www.w3.org/2000/svg" style="width:100%; height:auto;">
-          <text x="230" y="35" text-anchor="middle" fill="var(--accent)" font-size="14" font-weight="700" font-family="var(--font)">기존 NPU</text>
-          <text x="950" y="35" text-anchor="middle" fill="var(--accent)" font-size="14" font-weight="700" font-family="var(--font)">글로벌 NPU</text>
+          <text x="230" y="35" text-anchor="middle" fill="var(--text-muted)" font-size="20" font-weight="700" font-family="var(--font)">기존 NPU</text>
+          <text x="950" y="35" text-anchor="middle" fill="var(--map-11)" font-size="20" font-weight="700" font-family="var(--font)">글로벌 NPU</text>
 
           <!-- connectors -->
           <path d="M420,87 C540,87 640,87 760,87" fill="none" stroke="var(--map-merge)" stroke-width="2.4" opacity="0.9"/>
@@ -1380,40 +1380,40 @@ tr.g-console .svc-chip { color:var(--plum); background:var(--plum-dim); }
           <!-- left nodes (기존 NPU) -->
           <g font-family="var(--font)">
             <rect x="40" y="55" width="380" height="64" rx="10" fill="var(--surface)" stroke="var(--border2)" stroke-width="1.2"/>
-            <text x="58" y="88" font-size="18" font-weight="700" fill="var(--text-muted)" font-family="monospace">fnpu_key_info</text>
-            <text x="58" y="108" font-size="12.5" fill="var(--text-dim)">NPU Key 식별 정보</text>
+            <text x="58" y="79" font-size="18.5" font-weight="700" fill="var(--text-muted)" font-family="var(--font)" dominant-baseline="middle">fnpu_key_info</text>
+            <text x="58" y="99" font-size="14" fill="var(--text-dim)" dominant-baseline="middle">NPU Key 식별 정보</text>
 
             <rect x="40" y="139" width="380" height="64" rx="10" fill="var(--surface)" stroke="var(--border2)" stroke-width="1.2"/>
-            <text x="58" y="172" font-size="18" font-weight="700" fill="var(--text-muted)" font-family="monospace">fnpu_game_account_info</text>
-            <text x="58" y="192" font-size="12.5" fill="var(--text-dim)">게임 계정 정보</text>
+            <text x="58" y="163" font-size="18.5" font-weight="700" fill="var(--text-muted)" font-family="var(--font)" dominant-baseline="middle">fnpu_game_account_info</text>
+            <text x="58" y="183" font-size="14" fill="var(--text-dim)" dominant-baseline="middle">게임 계정 정보</text>
 
             <rect x="40" y="223" width="380" height="64" rx="10" fill="var(--surface)" stroke="var(--border2)" stroke-width="1.2"/>
-            <text x="58" y="256" font-size="18" font-weight="700" fill="var(--text-muted)" font-family="monospace">fnpu_status_info</text>
-            <text x="58" y="276" font-size="12.5" fill="var(--text-dim)">상태 정보</text>
+            <text x="58" y="247" font-size="18.5" font-weight="700" fill="var(--text-muted)" font-family="var(--font)" dominant-baseline="middle">fnpu_status_info</text>
+            <text x="58" y="267" font-size="14" fill="var(--text-dim)" dominant-baseline="middle">상태 정보</text>
 
             <rect x="40" y="307" width="380" height="64" rx="10" fill="var(--surface)" stroke="var(--border2)" stroke-width="1.2"/>
-            <text x="58" y="340" font-size="18" font-weight="700" fill="var(--text-muted)" font-family="monospace">fnpu_auth_info</text>
-            <text x="58" y="360" font-size="12.5" fill="var(--text-dim)">접속 정보</text>
+            <text x="58" y="331" font-size="18.5" font-weight="700" fill="var(--text-muted)" font-family="var(--font)" dominant-baseline="middle">fnpu_auth_info</text>
+            <text x="58" y="351" font-size="14" fill="var(--text-dim)" dominant-baseline="middle">접속 정보</text>
 
             <rect x="40" y="391" width="380" height="64" rx="10" fill="var(--surface)" stroke="var(--border2)" stroke-width="1.2"/>
-            <text x="58" y="424" font-size="18" font-weight="700" fill="var(--text-muted)" font-family="monospace">fnpu_sales_info</text>
-            <text x="58" y="444" font-size="12.5" fill="var(--text-dim)">과금 정보</text>
+            <text x="58" y="415" font-size="18.5" font-weight="700" fill="var(--text-muted)" font-family="var(--font)" dominant-baseline="middle">fnpu_sales_info</text>
+            <text x="58" y="435" font-size="14" fill="var(--text-dim)" dominant-baseline="middle">과금 정보</text>
 
             <rect x="40" y="475" width="380" height="64" rx="10" fill="var(--surface)" stroke="var(--border2)" stroke-width="1.2"/>
-            <text x="58" y="508" font-size="18" font-weight="700" fill="var(--text-muted)" font-family="monospace">fnpu_main_account_info</text>
-            <text x="58" y="528" font-size="12.5" fill="var(--text-dim)">대표 계정 정보</text>
+            <text x="58" y="499" font-size="18.5" font-weight="700" fill="var(--text-muted)" font-family="var(--font)" dominant-baseline="middle">fnpu_main_account_info</text>
+            <text x="58" y="519" font-size="14" fill="var(--text-dim)" dominant-baseline="middle">대표 계정 정보</text>
 
             <rect x="40" y="559" width="380" height="64" rx="10" fill="var(--surface)" stroke="var(--border2)" stroke-width="1.2"/>
-            <text x="58" y="592" font-size="18" font-weight="700" fill="var(--text-muted)" font-family="monospace">fnpu_key_np_mapping</text>
-            <text x="58" y="612" font-size="12.5" fill="var(--text-dim)">Key-NP 매핑 이력</text>
+            <text x="58" y="583" font-size="18.5" font-weight="700" fill="var(--text-muted)" font-family="var(--font)" dominant-baseline="middle">fnpu_key_np_mapping</text>
+            <text x="58" y="603" font-size="14" fill="var(--text-dim)" dominant-baseline="middle">Key-NP 매핑 이력</text>
 
             <rect x="40" y="643" width="380" height="64" rx="10" fill="var(--surface)" stroke="var(--border2)" stroke-width="1.2"/>
-            <text x="58" y="676" font-size="18" font-weight="700" fill="var(--text-muted)" font-family="monospace">fnpu_bds_all_account_info</text>
-            <text x="58" y="696" font-size="12.5" fill="var(--text-dim)">부정 사용자 정보</text>
+            <text x="58" y="667" font-size="18.5" font-weight="700" fill="var(--text-muted)" font-family="var(--font)" dominant-baseline="middle">fnpu_bds_all_account_info</text>
+            <text x="58" y="687" font-size="14" fill="var(--text-dim)" dominant-baseline="middle">부정 사용자 정보</text>
 
             <rect x="40" y="727" width="380" height="64" rx="10" fill="var(--surface)" stroke="var(--border2)" stroke-width="1.2"/>
-            <text x="58" y="760" font-size="18" font-weight="700" fill="var(--text-muted)" font-family="monospace">fnpu_guest_info</text>
-            <text x="58" y="780" font-size="12.5" fill="var(--text-dim)">게스트 계정 정보</text>
+            <text x="58" y="751" font-size="18.5" font-weight="700" fill="var(--text-muted)" font-family="var(--font)" dominant-baseline="middle">fnpu_guest_info</text>
+            <text x="58" y="771" font-size="14" fill="var(--text-dim)" dominant-baseline="middle">게스트 계정 정보</text>
 
             <rect x="40" y="811" width="380" height="64" rx="10" fill="none" stroke="var(--border2)" stroke-dasharray="5,4"/>
             <text x="230" y="848" text-anchor="middle" font-size="14" fill="var(--text-dim)" font-style="italic">해당 없음 (신규 테이블)</text>
@@ -1425,49 +1425,48 @@ tr.g-console .svc-chip { color:var(--plum); background:var(--plum-dim); }
           <!-- right nodes (글로벌 NPU) -->
           <g font-family="var(--font)">
             <rect x="760" y="55" width="380" height="64" rx="10" fill="var(--map-merge-dim)" stroke="var(--map-merge)" stroke-opacity="0.6" stroke-width="1.2"/>
-            <text x="778" y="88" font-size="18" font-weight="800" fill="var(--map-merge)" font-family="monospace">dnpu_account</text>
-            <text x="778" y="108" font-size="12.5" fill="var(--text-muted)">메인 테이블 · NPU 계정 통합</text>
+            <text x="778" y="79" font-size="18.5" font-weight="800" fill="var(--map-merge)" font-family="var(--font)" dominant-baseline="middle">dnpu_account</text>
+            <text x="778" y="99" font-size="14" fill="var(--text-muted)" dominant-baseline="middle">메인 테이블 · NPU 계정 통합</text>
 
             <rect x="760" y="139" width="380" height="64" rx="10" fill="var(--map-11-dim)" stroke="var(--map-11)" stroke-opacity="0.6" stroke-width="1.2"/>
-            <text x="778" y="172" font-size="18" font-weight="800" fill="var(--map-11)" font-family="monospace">fnpu_status</text>
-            <text x="778" y="192" font-size="12.5" fill="var(--text-muted)">팩트 · 상태 (NB/CB/ST)</text>
+            <text x="778" y="163" font-size="18.5" font-weight="800" fill="var(--map-11)" font-family="var(--font)" dominant-baseline="middle">fnpu_status</text>
+            <text x="778" y="183" font-size="14" fill="var(--text-muted)" dominant-baseline="middle">팩트 · 상태 (NB/CB/ST)</text>
 
             <rect x="760" y="223" width="380" height="64" rx="10" fill="var(--map-11-dim)" stroke="var(--map-11)" stroke-opacity="0.6" stroke-width="1.2"/>
-            <text x="778" y="256" font-size="18" font-weight="800" fill="var(--map-11)" font-family="monospace">fnpu_login</text>
-            <text x="778" y="276" font-size="12.5" fill="var(--text-muted)">팩트 · 접속/플레이타임 (하위 허브)</text>
+            <text x="778" y="247" font-size="18.5" font-weight="800" fill="var(--map-11)" font-family="var(--font)" dominant-baseline="middle">fnpu_login</text>
+            <text x="778" y="267" font-size="14" fill="var(--text-muted)" dominant-baseline="middle">팩트 · 접속/플레이타임 (하위 허브)</text>
 
             <rect x="760" y="307" width="380" height="64" rx="10" fill="var(--map-split-dim)" stroke="var(--map-split)" stroke-opacity="0.6" stroke-width="1.2"/>
-            <text x="778" y="340" font-size="18" font-weight="800" fill="var(--map-split)" font-family="monospace">fnpu_payment_pre</text>
-            <text x="778" y="360" font-size="12.5" fill="var(--text-muted)">팩트 · 환율 적용 전 매출</text>
+            <text x="778" y="331" font-size="18.5" font-weight="800" fill="var(--map-split)" font-family="var(--font)" dominant-baseline="middle">fnpu_payment_pre</text>
+            <text x="778" y="351" font-size="14" fill="var(--text-muted)" dominant-baseline="middle">팩트 · 환율 적용 전 매출</text>
 
             <rect x="760" y="391" width="380" height="64" rx="10" fill="var(--map-split-dim)" stroke="var(--map-split)" stroke-opacity="0.6" stroke-width="1.2"/>
-            <text x="778" y="424" font-size="18" font-weight="800" fill="var(--map-split)" font-family="monospace">fnpu_payment</text>
-            <text x="778" y="444" font-size="12.5" fill="var(--text-muted)">팩트 · 최종 매출 (환율·VAT)</text>
+            <text x="778" y="415" font-size="18.5" font-weight="800" fill="var(--map-split)" font-family="var(--font)" dominant-baseline="middle">fnpu_payment</text>
+            <text x="778" y="435" font-size="14" fill="var(--text-muted)" dominant-baseline="middle">팩트 · 최종 매출 (환율·VAT)</text>
 
             <rect x="760" y="475" width="380" height="64" rx="10" fill="var(--map-11-dim)" stroke="var(--map-11)" stroke-opacity="0.6" stroke-width="1.2"/>
-            <text x="778" y="508" font-size="18" font-weight="800" fill="var(--map-11)" font-family="monospace">fnpu_main_account</text>
-            <text x="778" y="528" font-size="12.5" fill="var(--text-muted)">팩트 · 대표(메인) 계정</text>
+            <text x="778" y="499" font-size="18.5" font-weight="800" fill="var(--map-11)" font-family="var(--font)" dominant-baseline="middle">fnpu_main_account</text>
+            <text x="778" y="519" font-size="14" fill="var(--text-muted)" dominant-baseline="middle">팩트 · 대표(메인) 계정</text>
 
             <rect x="760" y="559" width="380" height="64" rx="10" fill="var(--map-11-dim)" stroke="var(--map-11)" stroke-opacity="0.6" stroke-width="1.2"/>
-            <text x="778" y="592" font-size="18" font-weight="800" fill="var(--map-11)" font-family="monospace">fnpu_history</text>
-            <text x="778" y="612" font-size="12.5" fill="var(--text-muted)">팩트 · Key 누적 이력</text>
+            <text x="778" y="583" font-size="18.5" font-weight="800" fill="var(--map-11)" font-family="var(--font)" dominant-baseline="middle">fnpu_history</text>
+            <text x="778" y="603" font-size="14" fill="var(--text-muted)" dominant-baseline="middle">팩트 · Key 누적 이력</text>
 
             <rect x="760" y="643" width="380" height="64" rx="10" fill="var(--map-11-dim)" stroke="var(--map-11)" stroke-opacity="0.6" stroke-width="1.2"/>
-            <text x="778" y="676" font-size="18" font-weight="800" fill="var(--map-11)" font-family="monospace">fnpu_bds</text>
-            <text x="778" y="696" font-size="12.5" fill="var(--text-muted)">팩트 · 부정 사용자</text>
+            <text x="778" y="667" font-size="18.5" font-weight="800" fill="var(--map-11)" font-family="var(--font)" dominant-baseline="middle">fnpu_bds</text>
+            <text x="778" y="687" font-size="14" fill="var(--text-muted)" dominant-baseline="middle">팩트 · 부정 사용자</text>
 
             <rect x="760" y="727" width="380" height="64" rx="10" fill="var(--map-cond-dim)" stroke="var(--map-cond)" stroke-opacity="0.6" stroke-width="1.2"/>
-            <text x="778" y="760" font-size="18" font-weight="800" fill="var(--map-cond)" font-family="monospace">fnpu_account</text>
-            <text x="778" y="780" font-size="12.5" fill="var(--text-dim)">auth_platform='guest' 조건 추출</text>
+            <text x="778" y="751" font-size="18.5" font-weight="800" fill="var(--map-cond)" font-family="var(--font)" dominant-baseline="middle">dnpu_account</text>
+            <text x="778" y="771" font-size="14" fill="var(--map-cond)" dominant-baseline="middle">auth_platform='guest' 조건 추출</text>
 
-            
             <rect x="760" y="811" width="380" height="64" rx="10" fill="var(--map-new-dim)" stroke="var(--map-new)" stroke-opacity="0.6" stroke-width="1.2"/>
-            <text x="778" y="838" font-size="18" font-weight="800" fill="var(--map-new)" font-family="monospace">dnpu_svc_appgroup</text>
-            <text x="778" y="859" font-size="12.5" fill="var(--text-muted)">디멘전 · 신규 · 기존 매핑 없음</text>
+            <text x="778" y="835" font-size="18.5" font-weight="800" fill="var(--map-new)" font-family="var(--font)" dominant-baseline="middle">dnpu_svc_appgroup</text>
+            <text x="778" y="855" font-size="14" fill="var(--text-muted)" dominant-baseline="middle">디멘전 · 신규 · 기존 매핑 없음</text>
 
             <rect x="760" y="895" width="380" height="64" rx="10" fill="var(--map-new-dim)" stroke="var(--map-new)" stroke-opacity="0.6" stroke-width="1.2"/>
-            <text x="778" y="922" font-size="18" font-weight="800" fill="var(--map-new)" font-family="monospace">dnpu_category</text>
-            <text x="778" y="943" font-size="12.5" fill="var(--text-muted)">디멘전 · 신규 · 기존 매핑 없음</text>
+            <text x="778" y="919" font-size="18.5" font-weight="800" fill="var(--map-new)" font-family="var(--font)" dominant-baseline="middle">dnpu_category</text>
+            <text x="778" y="939" font-size="14" fill="var(--text-muted)" dominant-baseline="middle">디멘전 · 신규 · 기존 매핑 없음</text>
           </g>
         </svg>
       </div>
@@ -1520,7 +1519,7 @@ tr.g-console .svc-chip { color:var(--plum); background:var(--plum-dim); }
             </tr>
             <tr>
               <td class="old-col">fnpu_guest_info</td>
-              <td class="new-col">fnpu_account</td>
+              <td class="new-col">dnpu_account</td>
               <td class="note-col">별도 테이블 없이 <span class="old-col" style="font-family:monospace;">dnpu_account 테이블에서 auth_platform = 'guest'</span> 조건으로 추출</td>
             </tr>
             <tr>
